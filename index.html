@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--  *CRITICAL*: Viewport Meta Tag - MUST be present and EXACT! -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TECHNOSAVIOUR 2025 - Royal High-Tech Edition</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
@@ -88,16 +87,18 @@
             margin: 10px 0; /* Reduced margin */
         }
 
-        .logo-space {
-            width: 80px; /* Reduced logo size */
+        .college-logo {
+            width: 150px; /* Adjust size as needed */
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        .logo-space img {
-            max-width: 100%;
-            height: auto;
+        .biotech-logo {
+            width: 170px; /* Adjust size as needed */
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         /* Main Content */
@@ -114,12 +115,7 @@
         }
 
         .club-logo-space {
-            width: 120px; /* Reduced logo size */
-            height: 120px; /* Reduced logo size */
-            margin: 0 auto 10px; /* Reduced margin */
-            border-radius: 50%;
-            overflow: hidden;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            margin-bottom: 20px; /* Space below the club logo */
         }
 
         #hero h1 {
@@ -422,6 +418,7 @@
             font-size: 1.2em; /* Reduced font size */
             margin-bottom: 5px; /* Reduced margin */
             font-weight: 600;
+            cursor: pointer; /* Indicate that it's clickable */
         }
 
         .contact-item p {
@@ -512,16 +509,14 @@
             header h2 {
                 font-size: 1.3em;
             }
-            .logo-space {
-                width: 120px;
+            .college-logo {
+                width: 150px; /* Adjusted for larger screens */
+            }
+            .biotech-logo {
+                width: 80px; /* Adjusted for larger screens */
             }
             #hero {
                 padding: 60px 20px;
-            }
-            .club-logo-space {
-                width: 160px;
-                height: 160px;
-                margin-bottom: 15px;
             }
             #hero h1 {
                 font-size: 3em;
@@ -634,18 +629,14 @@
                 font-size: 1.5em;
             }
 
-            .logo-space {
-                width: 150px;
+            .college-logo {
+                width: 150px; /* Adjusted for larger screens */
             }
-
+            .biotech-logo {
+                width: 80px; /* Adjusted for larger screens */
+            }
             #hero {
                 padding: 80px 20px;
-            }
-
-            .club-logo-space {
-                width: 200px;
-                height: 200px;
-                margin-bottom: 20px;
             }
 
             #hero h1 {
@@ -780,7 +771,7 @@
 <body>
 
 <header>
-    <div class="logo-space"><img src="images/college-logo-left.png" alt="College Logo"></div>
+    <div class="college-logo"><img src="dgvc-removebg-preview.png" alt="College Logo"></div>
     <div>
         <h1>DWARAKA DOSS GOVERDHAN DOSS VAISHNAV COLLEGE</h1>
         <p>(Autonomous)</p>
@@ -789,7 +780,7 @@
         <p>Affiliated to University of Madras, Arumbakkam, Chennai – 600 106</p>
         <h2>POST GRADUATE DEPARTMENT OF BIOTECHNOLOGY</h2>
     </div>
-    <div class="logo-space"><img src="images/biotech-dept-logo.png" alt="Biotech Logo"></div>
+    <div class="biotech-logo"><img src="601.png" alt="Biotech Logo"></div>
 </header>
 
 <main>
@@ -797,7 +788,7 @@
     <!-- Hero Section -->
     <section id="hero">
         <div class="club-logo-space">
-            <img src="images/club-logo.png" alt="Club Logo">
+            <img src="club-logo.png" alt="Club Logo" style="width: 100px; height: auto;">
         </div>
         <h1>TECHNOSAVIOUR 2025</h1>
         <p>A fest exclusively for Life Science Students</p>
@@ -858,106 +849,105 @@
         <p>Dwaraka Doss Gover dhan Doss Vaishnav College is a renowned institution known for its academic excellence and commitment to holistic education. Established in [Year], the college offers a wide range of undergraduate and postgraduate programs across various disciplines. With a strong emphasis on research, innovation, and community engagement, DDGDVC strives to empower students to become responsible and contributing members of society.</p>
     </section>
 
-  <!-- About the Department Section -->
-  <section id="about-department">
-    <h2>About the Department</h2>
-    <p>The Post Graduate Department of Biotechnology at DDGDVC is a vibrant and dynamic center for learning and research in the field of biotechnology. The department is committed to providing students with a comprehensive understanding of the principles and applications of biotechnology, preparing them for successful careers in academia, industry, and government. Through innovative teaching methods, state-of-the-art facilities, and a dedicated faculty, the department fosters a culture of intellectual curiosity, creativity, and collaboration.</p>
-  </section>
+    <!-- About the Department Section -->
+    <section id="about-department">
+        <h2>About the Department</h2>
+        <p>The Post Graduate Department of Biotechnology at DDGDVC is a vibrant and dynamic center for learning and research in the field of biotechnology. The department is committed to providing students with a comprehensive understanding of the principles and applications of biotechnology, preparing them for successful careers in academia, industry, and government. Through innovative teaching methods, state-of-the-art facilities, and a dedicated faculty, the department fosters a culture of intellectual curiosity, creativity, and collaboration.</p>
+    </section>
 
-  <!-- About the Club Section -->
-  <section id="about-club">
-    <h2>About the Club</h2>
-    <p>The [Your Club Name] is a student-led organization at DDGDVC dedicated to promoting interest and engagement in biotechnology and related fields. The club organizes a variety of events and activities throughout the year, including seminars, workshops, competitions, and field trips, providing students with opportunities to learn, network, and develop their skills. The club is committed to fostering a vibrant and inclusive community of students passionate about shaping the future of biotechnology.</p>
-  </section>
+    <!-- About the Club Section -->
+    <section id="about-club">
+        <h2>About the Club</h2>
+        <p>The [Your Club Name] is a student-led organization at DDGDVC dedicated to promoting interest and engagement in biotechnology and related fields. The club organizes a variety of events and activities throughout the year, including seminars, workshops, competitions, and field trips, providing students with opportunities to learn, network, and develop their skills. The club is committed to fostering a vibrant and inclusive community of students passionate about shaping the future of biotechnology.</p>
+    </section>
 
-  <!-- Google Forms Section -->
-  <section id="google-form">
-    <h2>Registration Form</h2>
-    <iframe src="https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_EMBED_LINK_HERE/viewform?embedded=true" width="640" height="879" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-  </section>
+    <!-- Google Forms Section -->
+    <section id="google-form">
+        <h2>Registration Form</h2>
+        <iframe src="https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_EMBED_LINK_HERE/viewform?embedded=true" width="640" height="879" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <div class="contact-grid">
-      <div class="contact-item">
-        <i class="fas fa-user"></i>
-        <h3>M Pavithra</h3>
-        <p><i class="fas fa-phone"></i> (Ph no) </p>
-        <p>Organizing Secretary</p>
-      </div>
-      <div class="contact-item">
-        <i class="fas fa-user"></i>
-        <h3>Kural</h3>
-        <p><i class="fas fa-phone"></i> (Ph no) </p>
-        <p>Joint Secretary</p>
-      </div>
-      <div class="contact-item">
-        <i class="fas fa-user"></i>
-        <h3>Hemapriya</h3>
-        <p><i class="fas fa-phone"></i> (Ph no) </p>
-        <p>Organizing Secretary</p>
-      </div>
-
-      <div class="contact-item">
-        <i class="fas fa-user"></i>
-        <h3>Abilash</h3>
-        <p><i class="fas fa-phone"></i> (Ph no) </p>
-        <p>President</p>
-      </div>
-
-      <div class="contact-item">
-        <i class="fas fa-user"></i>
-        <h3>Kharan</h3>
-        <p><i class="fas fa-phone"></i> (Ph no) </p>
-        <p>Vice President</p>
-      </div>
-
-    </div>
-  </section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-grid">
+            <div class="contact-item" onclick="window.location.href='tel:+1234567890'">
+                <i class="fas fa-user"></i>
+                <h3>M Pavithra</h3>
+                <p><i class="fas fa-phone"></i> +1234567890</p>
+                <p>Organizing Secretary</p>
+            </div>
+            <div class="contact-item" onclick="window.location.href='tel:+0987654321'">
+                <i class="fas fa-user"></i>
+                <h3>Kural</h3>
+                <p><i class="fas fa-phone"></i> +0987654321</p>
+                <p>Joint Secretary</p>
+            </div>
+            <div class="contact-item" onclick="window.location.href='tel:+1122334455'">
+                <i class="fas fa-user"></i>
+                <h3>Hemapriya</h3>
+                <p><i class="fas fa-phone"></i> +1122334455</p>
+                <p>Organizing Secretary</p>
+            </div>
+            <div class="contact-item" onclick="window.location.href='tel:+2233445566'">
+                <i class="fas fa-user"></i>
+                <h3>Abilash</h3>
+                <p><i class="fas fa-phone"></i> +2233445566</p>
+                <p>Joint Secretary</p>
+            </div>
+        </div>
+    </section>
 
 </main>
 
 <footer>
-  <div class="footer-content">
-    <p class="copyright">© 2025 DWARAKA DOSS GOVERDHAN DOSS VAISHNAV COLLEGE</p>
-    <div class="social-links">
-      <a href="YOUR_INSTAGRAM_LINK_HERE" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-      <a href="YOUR_INSTAGRAM_LINK_HERE" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-      <a href="YOUR_LINKEDIN_LINK_HERE" target="_blank" rel="noopener noreferrer"><i class ="fab fa-linkedin"></i></a>
-      <a href="YOUR_WEBSITE_LINK_HERE" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i></a>
-      <a href="YOUR_YOUTUBE_LINK_HERE" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+    <div class="footer-content">
+        <div class="copyright">© 2025 Dwaraka Doss Goverdhan Doss Vaishnav College. All rights reserved.</div>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
     </div>
-  </div>
 </footer>
 
 <script>
-let slideIndex = 1;
-showSlides(slideIndex);
+    let slideIndex = 0;
+    showSlides();
 
-function plusSlides(n) {
-  showSlides(slide Index += n);
-}
+    function showSlides() {
+        let i;
+        const slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        slides[slideIndex - 1].style.display = "block";  
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+    function plusSlides(n) {
+        slideIndex += n;
+        if (slideIndex > document.getElementsByClassName("mySlides").length) {slideIndex = 1}
+        if (slideIndex < 1) {slideIndex = document.getElementsByClassName("mySlides").length}
+        showSlidesManually();
+    }
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slides[slideIndex-1].style.display = "block";  
-}
+    function showSlidesManually() {
+        let i;
+        const slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slides[slideIndex - 1].style.display = "block";  
+    }
 
-function smoothScroll(target) {
-  const element = document.querySelector(target);
-  element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-}
+    function smoothScroll(target) {
+        const element = document.querySelector(target);
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
 </script>
 
 </body>
