@@ -50,55 +50,60 @@
         }
 
         /* Header */
-        header {
-            display: grid;
-            grid-template-columns: auto 1fr auto; /* Adjust column sizes if needed */
-            align-items: center;
-            padding: 10px; /* Reduced padding */
+       header {
+            display: flex;
+            justify-content: space-between; /* Distribute space evenly */
+            align-items: center; /* Vertically align items */
+            padding: 10px 20px; /* Reduced padding */
             background-color: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(12px);
             border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-            text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             position: relative;
             overflow: hidden;
         }
 
-        header h1 {
+        .college-logo, .biotech-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 120px; /* Adjusted size for better fit */
+            height: auto;  /* Maintain aspect ratio */
+        }
+
+        .college-logo img, .biotech-logo img {
+            max-width: 100%;
+            max-height: 100%;
+            display: block; /* Ensure images are treated as blocks */
+        }
+
+
+        .header-text {
+            flex-grow: 1; /* Allow text area to take up remaining space */
+            text-align: center; /* Center the text within this area */
+        }
+
+        .header-text h1 {
             color: #ffffff;
             margin: 0;
-            font-size: 2em; /* Reduced font size */
+            font-size: 1.7em; /* Reduced font size */
             font-weight: 700;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
             letter-spacing: 1px;
             text-transform: uppercase;
         }
 
-        header p {
+        .header-text p {
             color: #eee;
             margin: 5px 0;
-            font-size: 0.9em; /* Reduced font size */
+            font-size: 0.8em; /* Reduced font size */
         }
 
-        header h2 {
+        .header-text h2 {
             color: #ffffff;
-            font-size: 1.5em; /* Reduced font size */
+            font-size: 1.2em; /* Reduced font size */
             font-weight: 600;
             margin: 10px 0; /* Reduced margin */
-        }
-
-        .college-logo {
-            width: 150px; /* Adjust size as needed */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .biotech-logo {
-            width: 170px; /* Adjust size as needed */
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
 
         /* Main Content */
@@ -116,6 +121,14 @@
 
         .club-logo-space {
             margin-bottom: 20px; /* Space below the club logo */
+        }
+
+        /* Style the logo */
+        .club-logo-space img {
+            width: 100px;  /* Adjust the size as needed */
+            height: auto;    /* Maintain aspect ratio */
+            display: block;   /* Remove extra space */
+            margin: 0 auto;  /* Center horizontally */
         }
 
         #hero h1 {
@@ -502,11 +515,11 @@
                 padding: 15px 30px;
             }
 
-            header h1 {
-                font-size: 2.5em;
+            .header-text h1 {
+                font-size: 2.0em;
             }
 
-            header h2 {
+            .header-text h2 {
                 font-size: 1.3em;
             }
             .college-logo {
@@ -621,11 +634,11 @@
                 padding: 20px 40px;
             }
 
-            header h1 {
-                font-size: 3em;
+            .header-text h1 {
+                font-size: 2.5em;
             }
 
-            header h2 {
+            .header-text h2 {
                 font-size: 1.5em;
             }
 
@@ -772,7 +785,7 @@
 
 <header>
     <div class="college-logo"><img src="dgvc-removebg-preview.png" alt="College Logo"></div>
-    <div>
+    <div class="header-text">
         <h1>DWARAKA DOSS GOVERDHAN DOSS VAISHNAV COLLEGE</h1>
         <p>(Autonomous)</p>
         <p>Re-accredited by NAAC with A++ Grade in 3rd Cycle</p>
@@ -788,7 +801,7 @@
     <!-- Hero Section -->
     <section id="hero">
         <div class="club-logo-space">
-            <img src="techno.png" alt="Club Logo" style="width: 100px; height: auto;">
+            <img src="techno.png" alt="Club Logo">
         </div>
         <h1>TECHNOSAVIOUR 2025</h1>
         <p>A fest exclusively for Life Science Students</p>
@@ -848,7 +861,7 @@
         <h2>About the College</h2>
         <p>Dwaraka Doss Gover dhan Doss Vaishnav College is a renowned institution known for its academic excellence and commitment to holistic education. Established in [Year], the college offers a wide range of undergraduate and postgraduate programs across various disciplines. With a strong emphasis on research, innovation, and community engagement, DDGDVC strives to empower students to become responsible and contributing members of society.</p>
     </section>
-
+    
     <!-- About the Department Section -->
     <section id="about-department">
         <h2>About the Department</h2>
